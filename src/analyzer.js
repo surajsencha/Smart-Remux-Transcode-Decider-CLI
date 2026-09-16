@@ -1,4 +1,4 @@
-import { exec, execFile } from "child_process";
+import { execFile } from "child_process";
 
 function parseMediaInfo(rawData) {
     let videoStream = null;

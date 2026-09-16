@@ -1,5 +1,3 @@
-import { execFile } from "child_process";
-import fs from "fs"
 export function makeDecision(inputInfo, targetSpec) {
     const videoCodecMatches =
         inputInfo.videoCodec?.toLowerCase() === targetSpec.videoCodec?.toLowerCase();
@@ -77,9 +75,3 @@ export function makeDecision(inputInfo, targetSpec) {
     };
 }
 
-function runFFmpeg(inputPath, args, callback) {
-    const startTime = Date.now();
-    const inputSize = fs.statSync(inputPath).size;
-    execFile("ffmpeg", args, callback);
-
-}
