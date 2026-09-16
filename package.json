@@ -1,0 +1,29 @@
+{
+  "name": "ffmpeg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test:analyzer": "node tests/test-analyzer.js",
+    "test:decider": "node tests/test-decider.js",
+    "test:executor": "node tests/test-executor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surajsencha/Smart-Remux-Transcode-Decider-CLI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/surajsencha/Smart-Remux-Transcode-Decider-CLI/issues"
+  },
+  "homepage": "https://github.com/surajsencha/Smart-Remux-Transcode-Decider-CLI#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.4.0",
+    "uuid": "^14.0.2"
+  }
+}
